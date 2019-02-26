@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e41fc2cc-2f9f-489e-943f-9cc90582921c" name="Default" comment="" />
+    <list default="true" id="e41fc2cc-2f9f-489e-943f-9cc90582921c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Primeau/exception/ajoutInvalide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Primeau/exception/ajoutInvalide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Primeau/impl/ChangePrimeau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Primeau/impl/ChangePrimeau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Primeau/impl/ServiceArgentPrimeau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Primeau/impl/ServiceArgentPrimeau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/Primeau/TestServiceArgentPrimeau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/Primeau/TestServiceArgentPrimeau.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,7 +18,53 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="ServiceArgentPrimeau.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/impl/ServiceArgentPrimeau.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+              <folding>
+                <element signature="method#nomEtudiant#0;class#ServiceArgentPrimeau#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestServiceArgentPrimeau.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/Primeau/TestServiceArgentPrimeau.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="497">
+              <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceArgent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/interfaces/ServiceArgent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChangePrimeau.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/impl/ChangePrimeau.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -20,12 +73,16 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/org/Primeau/app/ScrapApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/Primeau/exception/ajoutInvalide.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/Primeau/impl/ChangePrimeau.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/Primeau/impl/ServiceArgentPrimeau.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/Primeau/TestServiceArgentPrimeau.java" />
       </list>
     </option>
@@ -36,12 +93,19 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1191" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="9" />
+    <option name="width" value="974" />
     <option name="height" value="1167" />
   </component>
   <component name="ProjectView">
@@ -163,6 +227,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
@@ -178,11 +245,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestServiceArgentPrimeau.testNombre">
+  <component name="RunManager" selected="JUnit.TestServiceArgentPrimeau.testRoundExceptionBig">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="TestServiceArgentPrimeau.testAjout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestServiceArgentPrimeau" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tp2-depart" />
       <extension name="coverage">
         <pattern>
@@ -194,7 +261,30 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.Primeau" />
       <option name="MAIN_CLASS_NAME" value="org.Primeau.TestServiceArgentPrimeau" />
-      <option name="METHOD_NAME" value="testAjout" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TestServiceArgentPrimeau.testRound40" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tp2-depart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.Primeau.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.Primeau" />
+      <option name="MAIN_CLASS_NAME" value="org.Primeau.TestServiceArgentPrimeau" />
+      <option name="METHOD_NAME" value="testRound40" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -205,7 +295,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestServiceArgentPrimeau.testAjoutBeaucoup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestServiceArgentPrimeau.testRoundExceptionBig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tp2-depart" />
       <extension name="coverage">
         <pattern>
@@ -217,7 +307,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.Primeau" />
       <option name="MAIN_CLASS_NAME" value="org.Primeau.TestServiceArgentPrimeau" />
-      <option name="METHOD_NAME" value="testAjoutBeaucoup" />
+      <option name="METHOD_NAME" value="testRoundExceptionBig" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -228,7 +318,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestServiceArgentPrimeau.testAjoutNegatif" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestServiceArgentPrimeau.testRoundExceptionBigLimite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tp2-depart" />
       <extension name="coverage">
         <pattern>
@@ -240,7 +330,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.Primeau" />
       <option name="MAIN_CLASS_NAME" value="org.Primeau.TestServiceArgentPrimeau" />
-      <option name="METHOD_NAME" value="testAjoutNegatif" />
+      <option name="METHOD_NAME" value="testRoundExceptionBigLimite" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -251,7 +341,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestServiceArgentPrimeau.testNombre" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestServiceArgentPrimeau.testRoundExceptionNegatif" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tp2-depart" />
       <extension name="coverage">
         <pattern>
@@ -263,30 +353,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.Primeau" />
       <option name="MAIN_CLASS_NAME" value="org.Primeau.TestServiceArgentPrimeau" />
-      <option name="METHOD_NAME" value="testNombre" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="TestServiceArgentPrimeau.testVide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tp2-depart" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.Primeau.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="org.Primeau" />
-      <option name="MAIN_CLASS_NAME" value="org.Primeau.TestServiceArgentPrimeau" />
-      <option name="METHOD_NAME" value="testVide" />
+      <option name="METHOD_NAME" value="testRoundExceptionNegatif" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -336,19 +403,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestServiceArgentPrimeau.testVide" />
-      <item itemvalue="JUnit.TestServiceArgentPrimeau.testAjout" />
-      <item itemvalue="JUnit.TestServiceArgentPrimeau.testAjoutBeaucoup" />
-      <item itemvalue="JUnit.TestServiceArgentPrimeau.testAjoutNegatif" />
-      <item itemvalue="JUnit.TestServiceArgentPrimeau.testNombre" />
+      <item itemvalue="JUnit.TestServiceArgentPrimeau.testRound40" />
+      <item itemvalue="JUnit.TestServiceArgentPrimeau" />
+      <item itemvalue="JUnit.TestServiceArgentPrimeau.testRoundExceptionBig" />
+      <item itemvalue="JUnit.TestServiceArgentPrimeau.testRoundExceptionNegatif" />
+      <item itemvalue="JUnit.TestServiceArgentPrimeau.testRoundExceptionBigLimite" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestServiceArgentPrimeau.testNombre" />
-        <item itemvalue="JUnit.TestServiceArgentPrimeau.testAjoutNegatif" />
-        <item itemvalue="JUnit.TestServiceArgentPrimeau.testAjoutBeaucoup" />
-        <item itemvalue="JUnit.TestServiceArgentPrimeau.testAjout" />
-        <item itemvalue="JUnit.TestServiceArgentPrimeau.testVide" />
+        <item itemvalue="JUnit.TestServiceArgentPrimeau.testRoundExceptionBig" />
+        <item itemvalue="JUnit.TestServiceArgentPrimeau.testRoundExceptionBigLimite" />
+        <item itemvalue="JUnit.TestServiceArgentPrimeau.testRoundExceptionNegatif" />
+        <item itemvalue="JUnit.TestServiceArgentPrimeau" />
+        <item itemvalue="JUnit.TestServiceArgentPrimeau.testRound40" />
       </list>
     </recent_temporary>
   </component>
@@ -363,76 +430,108 @@
       <option name="presentableId" value="Default" />
       <updated>1550610551838</updated>
       <workItem from="1550610555210" duration="7548000" />
+      <workItem from="1551213172384" duration="4543000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestServiceArgentPrimeau_testVide - 2019.02.19 at 17h 56m 31s.xml">
-      <configuration name="TestServiceArgentPrimeau.testVide" configurationId="JUnit" />
+    <history-entry file="TestServiceArgentPrimeau - 2019.02.26 at 16h 31m 27s.xml">
+      <configuration name="TestServiceArgentPrimeau" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestServiceArgentPrimeau_testAjout - 2019.02.19 at 17h 56m 36s.xml">
-      <configuration name="TestServiceArgentPrimeau.testAjout" configurationId="JUnit" />
+    <history-entry file="TestServiceArgentPrimeau - 2019.02.26 at 16h 35m 37s.xml">
+      <configuration name="TestServiceArgentPrimeau" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestServiceArgentPrimeau_testAjout - 2019.02.19 at 17h 57m 14s.xml">
-      <configuration name="TestServiceArgentPrimeau.testAjout" configurationId="JUnit" />
+    <history-entry file="TestServiceArgentPrimeau - 2019.02.26 at 16h 37m 33s.xml">
+      <configuration name="TestServiceArgentPrimeau" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestServiceArgentPrimeau_testAjout - 2019.02.19 at 17h 59m 00s.xml">
-      <configuration name="TestServiceArgentPrimeau.testAjout" configurationId="JUnit" />
+    <history-entry file="TestServiceArgentPrimeau_testRoundExceptionBig - 2019.02.26 at 16h 38m 13s.xml">
+      <configuration name="TestServiceArgentPrimeau.testRoundExceptionBig" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestServiceArgentPrimeau_testAjout - 2019.02.19 at 18h 01m 03s.xml">
-      <configuration name="TestServiceArgentPrimeau.testAjout" configurationId="JUnit" />
+    <history-entry file="TestServiceArgentPrimeau - 2019.02.26 at 16h 38m 25s.xml">
+      <configuration name="TestServiceArgentPrimeau" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestServiceArgentPrimeau_testAjout - 2019.02.19 at 18h 02m 36s.xml">
-      <configuration name="TestServiceArgentPrimeau.testAjout" configurationId="JUnit" />
+    <history-entry file="TestServiceArgentPrimeau_testRoundExceptionBig - 2019.02.26 at 16h 39m 20s.xml">
+      <configuration name="TestServiceArgentPrimeau.testRoundExceptionBig" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestServiceArgentPrimeau_testAjoutBeaucoup - 2019.02.19 at 18h 03m 55s.xml">
-      <configuration name="TestServiceArgentPrimeau.testAjoutBeaucoup" configurationId="JUnit" />
+    <history-entry file="TestServiceArgentPrimeau_testRoundExceptionNegatif - 2019.02.26 at 16h 40m 10s.xml">
+      <configuration name="TestServiceArgentPrimeau.testRoundExceptionNegatif" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestServiceArgentPrimeau_testAjoutNegatif - 2019.02.19 at 18h 06m 56s.xml">
-      <configuration name="TestServiceArgentPrimeau.testAjoutNegatif" configurationId="JUnit" />
+    <history-entry file="TestServiceArgentPrimeau_testRoundExceptionNegatif - 2019.02.26 at 16h 40m 16s.xml">
+      <configuration name="TestServiceArgentPrimeau.testRoundExceptionNegatif" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestServiceArgentPrimeau_testAjoutNegatif - 2019.02.19 at 18h 07m 22s.xml">
-      <configuration name="TestServiceArgentPrimeau.testAjoutNegatif" configurationId="JUnit" />
+    <history-entry file="TestServiceArgentPrimeau_testRoundExceptionBigLimite - 2019.02.26 at 16h 40m 57s.xml">
+      <configuration name="TestServiceArgentPrimeau.testRoundExceptionBigLimite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestServiceArgentPrimeau_testNombre - 2019.02.19 at 18h 10m 50s.xml">
-      <configuration name="TestServiceArgentPrimeau.testNombre" configurationId="JUnit" />
+    <history-entry file="TestServiceArgentPrimeau_testRoundExceptionBig - 2019.02.26 at 16h 41m 00s.xml">
+      <configuration name="TestServiceArgentPrimeau.testRoundExceptionBig" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7548000" />
+    <option name="totallyTimeSpent" value="12091000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1191" height="1167" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32986766" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32986766" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29446808" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3289597" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34301782" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18020834" />
+      <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39981097" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39925024" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289597" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18020834" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39925024" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3289597" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -442,11 +541,41 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="16" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>Math.round(montant* 20.0)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Math.round(montant* 20.0) / 20.0</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Math.round(montant/0.20) * 0.20</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>montant/0.20</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Math.round(montant/0.05)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Math.round(montant/0.05) * 0.05</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>map.get(i)</expression-string>
         <language-id>JAVA</language-id>
@@ -455,72 +584,11 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="202" selection-start-line="202" selection-end-line="202" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="333" selection-start-line="333" selection-end-line="333" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/exception/ajoutInvalide.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding>
-            <element signature="e#117#118#0" expanded="true" />
-            <element signature="e#140#141#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/Primeau/TestServiceArgentPrimeau.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/impl/ChangePrimeau.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/interfaces/Change.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -549,5 +617,125 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/exception/ajoutInvalide.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="53" lean-forward="true" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/interfaces/ServiceArgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/impl/ChangePrimeau.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/impl/ServiceArgentPrimeau.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding>
+            <element signature="method#nomEtudiant#0;class#ServiceArgentPrimeau#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/Primeau/TestServiceArgentPrimeau.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>tp2-depart</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: junit:junit:4.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

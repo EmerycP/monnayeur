@@ -25,21 +25,13 @@ public class ChangePrimeau implements Change {
     }
 
     public void ajouterItem(ArgentObjet m, int nombre) {
-        if (nombre < 0)
-        {
-            try{
-                throw new ajoutInvalide("Nombre trop petit");
-            } catch(ajoutInvalide e)
-            {
-                System.out.println(e.getMessage());
-                return;
-            }
-        }
+
+        if (nombre < 0 || nombre > 1000000)
+            throw new IllegalArgumentException();
 
        int arg =  map.get(m);
        arg += nombre;
        map.put(m, arg);
-
     }
 
     public double valeurTotale() {
