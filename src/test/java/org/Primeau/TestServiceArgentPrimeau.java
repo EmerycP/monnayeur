@@ -1,8 +1,11 @@
 package org.Primeau;
 
+import org.Primeau.exception.NombreChangeInvalide;
+import org.Primeau.exception.NombreChangeNegatif;
 import org.Primeau.impl.ChangePrimeau;
 import org.Primeau.impl.ServiceArgentPrimeau;
-import org.Primeau.exception.ajoutInvalide;
+import org.Primeau.interfaces.Change;
+import org.Primeau.interfaces.ServiceArgent;
 import org.Primeau.utils.ArgentObjet;
 import org.junit.Assert;
 import org.junit.Test;
@@ -11,46 +14,6 @@ import org.junit.Test;
  * Pour rappel, une classe de test par classe testée
  */
 public class TestServiceArgentPrimeau {
-
-    @Test
-    public void testAjoutSimple()
-    {
-        ChangePrimeau c = new ChangePrimeau();
-        c.ajouterItem(ArgentObjet.billet100, 3);
-        Assert.assertEquals(300, c.valeurTotale(),0);
-        c.ajouterItem(ArgentObjet.billet10, 3);
-        Assert.assertEquals(330, c.valeurTotale(),0);
-    }
-    @Test(expected = IllegalArgumentException.class)
-    public void testAjoutBeaucoup()
-    {
-        ChangePrimeau c = new ChangePrimeau();
-        c.ajouterItem(ArgentObjet.billet100, 3);
-        Assert.assertEquals(300, c.valeurTotale(),0);
-        c.ajouterItem(ArgentObjet.piece1, 1341234123);
-    }
-    @Test(expected = IllegalArgumentException.class)
-    public void testAjoutNegatif()
-    {
-        ChangePrimeau c = new ChangePrimeau();
-        c.ajouterItem(ArgentObjet.billet100, 3);
-        Assert.assertEquals(300, c.valeurTotale(),0);
-        c.ajouterItem(ArgentObjet.piece1, -1);
-    }
-    @Test
-    public void testNombre()
-    {
-        ChangePrimeau c = new ChangePrimeau();
-        c.ajouterItem(ArgentObjet.billet20, 2);
-        Assert.assertEquals(2, c.nombreItemsPour(ArgentObjet.billet20), 0);
-    }
-    @Test
-    public void testVide()  {
-        ChangePrimeau c = new ChangePrimeau();
-        Assert.assertEquals(c.valeurTotale(), 0,0);
-        Assert.assertEquals(c.nombreTotalItems(), 0, 0);
-    }
-
     @Test
     public void testRound0() {
         ServiceArgentPrimeau c = new ServiceArgentPrimeau();
@@ -96,6 +59,64 @@ public class TestServiceArgentPrimeau {
     public void testRoundExceptionBig(){
         ServiceArgentPrimeau c = new ServiceArgentPrimeau();
         c.arrondiA5sous(23452345);
+    }
+    @Test
+    public void testAjoutSimpleService()
+    {
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        c.ajouterItem(ArgentObjet.billet100, 3);
+        Assert.assertEquals(300, c.valeurTotale(),0);
+        c.ajouterItem(ArgentObjet.billet10, 3);
+        Assert.assertEquals(330, c.valeurTotale(),0);
+    }
+    @Test(expected = NombreChangeInvalide.class)
+    public void testAjoutBeaucoupService()
+    {
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        c.ajouterItem(ArgentObjet.billet100, 3);
+        Assert.assertEquals(300, c.valeurTotale(),0);
+        c.ajouterItem(ArgentObjet.piece1, 1341234123);
+    }
+    @Test(expected = NombreChangeInvalide.class)
+    public void testAjoutNegatifService()
+    {
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        c.ajouterItem(ArgentObjet.billet100, 3);
+        Assert.assertEquals(300, c.valeurTotale(),0);
+        c.ajouterItem(ArgentObjet.piece1, -1);
+    }
+    @Test
+    public void testNombreService()
+    {
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        c.ajouterItem(ArgentObjet.billet20, 2);
+        Assert.assertEquals(2, c.nombreItemsPour(ArgentObjet.billet20), 0);
+    }
+    @Test
+    public void testVideService()  {
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        Assert.assertEquals(0, c.valeurTotale(),0);
+        Assert.assertEquals(0, c.nombreTotalItems(), 0);
+    }
+    @Test(expected = IllegalArgumentException.class)
+    public void testRetirerNombreNeg(){
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        c.ajouterItem(ArgentObjet.billet20, 5);
+        c.retirerItems(ArgentObjet.billet20, -2);
+    }
+    @Test
+    public void testretirerItemsMarche(){
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        c.ajouterItem(ArgentObjet.billet20, 5);
+        c.retirerItems(ArgentObjet.billet20, 3);
+        Assert.assertEquals(2 ,c.nombreItemsPour(ArgentObjet.billet20), 0);
+    }
+    @Test(expected = NombreChangeNegatif.class)
+    public void testCapaciteMaxMarche2(){
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        c.ajouterItem(ArgentObjet.billet20, 5);
+        c.retirerItems(ArgentObjet.billet20, 7);
+        Assert.assertEquals(2 ,c.nombreItemsPour(ArgentObjet.billet20), 0);
     }
 	
 }

@@ -1,12 +1,26 @@
 package org.Primeau.impl;
 
-import org.Primeau.exception.ajoutInvalide;
+import org.Primeau.exception.NombreChangeInvalide;
+import org.Primeau.exception.NombreChangeNegatif;
 import org.Primeau.interfaces.Change;
+import org.Primeau.impl.ChangePrimeau;
 import org.Primeau.interfaces.ServiceArgent;
 import org.Primeau.utils.ArgentObjet;
 
+import java.util.Collections;
+import java.util.HashMap;
+
 
 public class ServiceArgentPrimeau implements ServiceArgent {
+
+    private HashMap<ArgentObjet, Integer> map = new HashMap<ArgentObjet, Integer>(ArgentObjet.values().length){
+        {
+            for (ArgentObjet argent : ArgentObjet.values())
+            {
+                put(argent, 0);
+            }
+        }
+    };
 
     public Change calculerChange(double montantDu, Change argentDonne) { throw new UnsupportedOperationException(); }
 
@@ -24,27 +38,44 @@ public class ServiceArgentPrimeau implements ServiceArgent {
     }
 
     public int nombreItemsPour(ArgentObjet m) {
-        throw new UnsupportedOperationException();
+        return map.get(m);
     }
 
     public void ajouterItem(ArgentObjet m, int nombre) {
-        throw new UnsupportedOperationException();
+        if (nombre < 0 || nombre > capaciteMaxPour(m))
+            throw new NombreChangeInvalide();
+
+        int arg =  map.get(m);
+        arg += nombre;
+        map.put(m, arg);
     }
 
     public double valeurTotale() {
-        throw new UnsupportedOperationException();
+        int sum = 0;
+        for (ArgentObjet a : map.keySet())
+            sum += (a.valeur() * map.get(a));
+
+        return  sum;
     }
 
     public int nombreTotalItems() {
-        throw new UnsupportedOperationException();
+        int sum = 0;
+        for(ArgentObjet i: map.keySet())
+            sum += (map.get(i));
+        return  sum;
     }
 
     public int capaciteMaxPour(ArgentObjet m) {
-        throw new UnsupportedOperationException();
+        return 40;
     }
 
     public void retirerItems(ArgentObjet m, int nombre) {
-        throw new UnsupportedOperationException();
+        if (nombre < 0)
+           throw new IllegalArgumentException();
+        if (nombreItemsPour(m) - nombre < 0)
+            throw new NombreChangeNegatif();
+
+        map.put(m, nombreItemsPour(m) - nombre);
     }
 }
 

@@ -18,53 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ServiceArgentPrimeau.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/impl/ServiceArgentPrimeau.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-              <folding>
-                <element signature="method#nomEtudiant#0;class#ServiceArgentPrimeau#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestServiceArgentPrimeau.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/Primeau/TestServiceArgentPrimeau.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceArgent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/interfaces/ServiceArgent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChangePrimeau.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/impl/ChangePrimeau.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,8 +34,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/org/Primeau/app/ScrapApp.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/Primeau/TestChangePrimeau.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/Primeau/exception/ajoutInvalide.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/Primeau/impl/ChangePrimeau.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/Primeau/exception/NombreChangeInvalide.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/Primeau/exception/NombreChangeNegatif.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/Primeau/impl/ServiceArgentPrimeau.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/Primeau/TestServiceArgentPrimeau.java" />
       </list>
@@ -103,9 +60,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="9" />
-    <option name="width" value="974" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1094" />
     <option name="height" value="1167" />
   </component>
   <component name="ProjectView">
@@ -173,15 +130,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Primeau" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tp2-depart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="monnayeur" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Primeau" type="462c0819:PsiDirectoryNode" />
               <item name="interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -233,6 +181,11 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.Primeau.exception" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -245,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestServiceArgentPrimeau.testRoundExceptionBig">
+  <component name="RunManager" selected="JUnit.TestServiceArgentPrimeau.testRetirerNombreNeg">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -272,7 +225,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestServiceArgentPrimeau.testRound40" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestServiceArgentPrimeau.testCapaciteMaxMarche" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tp2-depart" />
       <extension name="coverage">
         <pattern>
@@ -284,7 +237,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.Primeau" />
       <option name="MAIN_CLASS_NAME" value="org.Primeau.TestServiceArgentPrimeau" />
-      <option name="METHOD_NAME" value="testRound40" />
+      <option name="METHOD_NAME" value="testCapaciteMaxMarche" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -295,7 +248,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestServiceArgentPrimeau.testRoundExceptionBig" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestServiceArgentPrimeau.testCapaciteMaxMarche2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tp2-depart" />
       <extension name="coverage">
         <pattern>
@@ -307,7 +260,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.Primeau" />
       <option name="MAIN_CLASS_NAME" value="org.Primeau.TestServiceArgentPrimeau" />
-      <option name="METHOD_NAME" value="testRoundExceptionBig" />
+      <option name="METHOD_NAME" value="testCapaciteMaxMarche2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -318,7 +271,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestServiceArgentPrimeau.testRoundExceptionBigLimite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestServiceArgentPrimeau.testRetirerNombreNeg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tp2-depart" />
       <extension name="coverage">
         <pattern>
@@ -330,7 +283,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.Primeau" />
       <option name="MAIN_CLASS_NAME" value="org.Primeau.TestServiceArgentPrimeau" />
-      <option name="METHOD_NAME" value="testRoundExceptionBigLimite" />
+      <option name="METHOD_NAME" value="testRetirerNombreNeg" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -341,7 +294,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="TestServiceArgentPrimeau.testRoundExceptionNegatif" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestServiceArgentPrimeau.testretirerItemsMarche" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tp2-depart" />
       <extension name="coverage">
         <pattern>
@@ -353,7 +306,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="org.Primeau" />
       <option name="MAIN_CLASS_NAME" value="org.Primeau.TestServiceArgentPrimeau" />
-      <option name="METHOD_NAME" value="testRoundExceptionNegatif" />
+      <option name="METHOD_NAME" value="testretirerItemsMarche" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -403,19 +356,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestServiceArgentPrimeau.testRound40" />
       <item itemvalue="JUnit.TestServiceArgentPrimeau" />
-      <item itemvalue="JUnit.TestServiceArgentPrimeau.testRoundExceptionBig" />
-      <item itemvalue="JUnit.TestServiceArgentPrimeau.testRoundExceptionNegatif" />
-      <item itemvalue="JUnit.TestServiceArgentPrimeau.testRoundExceptionBigLimite" />
+      <item itemvalue="JUnit.TestServiceArgentPrimeau.testCapaciteMaxMarche" />
+      <item itemvalue="JUnit.TestServiceArgentPrimeau.testretirerItemsMarche" />
+      <item itemvalue="JUnit.TestServiceArgentPrimeau.testRetirerNombreNeg" />
+      <item itemvalue="JUnit.TestServiceArgentPrimeau.testCapaciteMaxMarche2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestServiceArgentPrimeau.testRoundExceptionBig" />
-        <item itemvalue="JUnit.TestServiceArgentPrimeau.testRoundExceptionBigLimite" />
-        <item itemvalue="JUnit.TestServiceArgentPrimeau.testRoundExceptionNegatif" />
+        <item itemvalue="JUnit.TestServiceArgentPrimeau.testRetirerNombreNeg" />
+        <item itemvalue="JUnit.TestServiceArgentPrimeau.testCapaciteMaxMarche2" />
+        <item itemvalue="JUnit.TestServiceArgentPrimeau.testretirerItemsMarche" />
         <item itemvalue="JUnit.TestServiceArgentPrimeau" />
-        <item itemvalue="JUnit.TestServiceArgentPrimeau.testRound40" />
+        <item itemvalue="JUnit.TestServiceArgentPrimeau.testCapaciteMaxMarche" />
       </list>
     </recent_temporary>
   </component>
@@ -430,52 +383,51 @@
       <option name="presentableId" value="Default" />
       <updated>1550610551838</updated>
       <workItem from="1550610555210" duration="7548000" />
-      <workItem from="1551213172384" duration="4543000" />
+      <workItem from="1551213172384" duration="8899000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestServiceArgentPrimeau - 2019.02.26 at 16h 31m 27s.xml">
+    <history-entry file="TestServiceArgentPrimeau - 2019.02.26 at 17h 40m 41s.xml">
       <configuration name="TestServiceArgentPrimeau" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestServiceArgentPrimeau - 2019.02.26 at 16h 35m 37s.xml">
+    <history-entry file="TestServiceArgentPrimeau_testCapaciteMaxMarche - 2019.02.26 at 17h 42m 33s.xml">
+      <configuration name="TestServiceArgentPrimeau.testCapaciteMaxMarche" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestServiceArgentPrimeau - 2019.02.26 at 17h 44m 49s.xml">
       <configuration name="TestServiceArgentPrimeau" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestServiceArgentPrimeau - 2019.02.26 at 16h 37m 33s.xml">
+    <history-entry file="TestServiceArgentPrimeau - 2019.02.26 at 17h 45m 43s.xml">
       <configuration name="TestServiceArgentPrimeau" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestServiceArgentPrimeau_testRoundExceptionBig - 2019.02.26 at 16h 38m 13s.xml">
-      <configuration name="TestServiceArgentPrimeau.testRoundExceptionBig" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestServiceArgentPrimeau - 2019.02.26 at 16h 38m 25s.xml">
+    <history-entry file="TestServiceArgentPrimeau - 2019.02.26 at 17h 49m 33s.xml">
       <configuration name="TestServiceArgentPrimeau" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestServiceArgentPrimeau_testRoundExceptionBig - 2019.02.26 at 16h 39m 20s.xml">
-      <configuration name="TestServiceArgentPrimeau.testRoundExceptionBig" configurationId="JUnit" />
+    <history-entry file="TestServiceArgentPrimeau - 2019.02.26 at 17h 49m 54s.xml">
+      <configuration name="TestServiceArgentPrimeau" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestServiceArgentPrimeau_testRoundExceptionNegatif - 2019.02.26 at 16h 40m 10s.xml">
-      <configuration name="TestServiceArgentPrimeau.testRoundExceptionNegatif" configurationId="JUnit" />
+    <history-entry file="TestServiceArgentPrimeau_testretirerItemsMarche - 2019.02.26 at 17h 59m 51s.xml">
+      <configuration name="TestServiceArgentPrimeau.testretirerItemsMarche" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestServiceArgentPrimeau_testRoundExceptionNegatif - 2019.02.26 at 16h 40m 16s.xml">
-      <configuration name="TestServiceArgentPrimeau.testRoundExceptionNegatif" configurationId="JUnit" />
+    <history-entry file="TestServiceArgentPrimeau_testRetirerNombreNeg - 2019.02.26 at 18h 00m 14s.xml">
+      <configuration name="TestServiceArgentPrimeau.testRetirerNombreNeg" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestServiceArgentPrimeau_testRoundExceptionBigLimite - 2019.02.26 at 16h 40m 57s.xml">
-      <configuration name="TestServiceArgentPrimeau.testRoundExceptionBigLimite" configurationId="JUnit" />
+    <history-entry file="TestServiceArgentPrimeau_testCapaciteMaxMarche2 - 2019.02.26 at 18h 00m 53s.xml">
+      <configuration name="TestServiceArgentPrimeau.testCapaciteMaxMarche2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestServiceArgentPrimeau_testRoundExceptionBig - 2019.02.26 at 16h 41m 00s.xml">
-      <configuration name="TestServiceArgentPrimeau.testRoundExceptionBig" configurationId="JUnit" />
+    <history-entry file="TestServiceArgentPrimeau_testRetirerNombreNeg - 2019.02.26 at 18h 00m 58s.xml">
+      <configuration name="TestServiceArgentPrimeau.testRetirerNombreNeg" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12091000" />
+    <option name="totallyTimeSpent" value="16447000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="1094" height="1167" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3289597" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32797733" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -483,18 +435,18 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34301782" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34593573" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18020834" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28014842" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39925024" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3988658" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -541,7 +493,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="25" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -589,13 +541,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/interfaces/Change.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/utils/ArgentObjet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -617,44 +562,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/exception/ajoutInvalide.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/interfaces/Change.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="53" lean-forward="true" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/interfaces/ServiceArgent.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/Primeau/TestChangePrimeau.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/impl/ChangePrimeau.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        <state relative-caret-position="514">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/impl/ChangePrimeau.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+          <folding>
+            <element signature="class#342:547" />
+            <element signature="method#nombreItemsPour#0;class#ChangePrimeau#0" />
+            <element signature="method#ajouterItem#0;class#ChangePrimeau#0" />
+            <element signature="method#valeurTotale#0;class#ChangePrimeau#0" />
+            <element signature="method#nombreTotalItems#0;class#ChangePrimeau#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/interfaces/ServiceArgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-880">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/exception/NombreChangeInvalide.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="76" selection-start-line="3" selection-start-column="76" selection-end-line="3" selection-end-column="76" />
+          <folding>
+            <element signature="e#125#126#0" expanded="true" />
+            <element signature="e#145#146#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/exception/NombreChangeNegatif.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/Primeau/impl/ServiceArgentPrimeau.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        <state relative-caret-position="425">
+          <caret line="73" column="46" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
           <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#375:580" />
+            <element signature="method#arrondiA5sous#0;class#ServiceArgentPrimeau#0" />
             <element signature="method#nomEtudiant#0;class#ServiceArgentPrimeau#0" />
+            <element signature="method#ajouterItem#0;class#ServiceArgentPrimeau#0" />
+            <element signature="method#valeurTotale#0;class#ServiceArgentPrimeau#0" />
+            <element signature="method#nombreTotalItems#0;class#ServiceArgentPrimeau#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/Primeau/TestServiceArgentPrimeau.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        <state relative-caret-position="2040">
+          <caret line="120" column="4" lean-forward="true" selection-start-line="120" selection-start-column="4" selection-end-line="120" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

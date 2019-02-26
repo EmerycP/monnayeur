@@ -1,7 +1,6 @@
 package org.Primeau.impl;
 
 import com.sun.org.apache.xpath.internal.Arg;
-import org.Primeau.exception.ajoutInvalide;
 import org.Primeau.utils.ArgentObjet;
 import org.Primeau.interfaces.Change;
 import java.util.HashMap;
@@ -17,7 +16,6 @@ public class ChangePrimeau implements Change {
             }
         }
     };
-
 
     public int nombreItemsPour(ArgentObjet m) {
 
@@ -36,9 +34,8 @@ public class ChangePrimeau implements Change {
 
     public double valeurTotale() {
         int sum = 0;
-        for (ArgentObjet a : map.keySet()){
+        for (ArgentObjet a : map.keySet())
             sum += (a.valeur() * map.get(a));
-        }
 
         return  sum;
     }
