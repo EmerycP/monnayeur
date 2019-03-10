@@ -1,5 +1,6 @@
 package org.Primeau.impl;
 
+import org.Primeau.exception.MontantARedonnerNegatif;
 import org.Primeau.exception.NombreChangeInvalide;
 import org.Primeau.exception.NombreChangeNegatif;
 import org.Primeau.interfaces.Change;
@@ -17,12 +18,42 @@ public class ServiceArgentPrimeau implements ServiceArgent {
         {
             for (ArgentObjet argent : ArgentObjet.values())
             {
-                put(argent, 0);
+                put(argent, capaciteMaxPour(argent));
             }
         }
     };
 
-    public Change calculerChange(double montantDu, Change argentDonne) { throw new UnsupportedOperationException(); }
+    public Change calculerChange(double montantDu, Change argentDonne) {
+
+        ChangePrimeau changeN = new ChangePrimeau();
+        double montantARedonner = argentDonne.valeurTotale() - montantDu;
+
+        if (montantARedonner < 0)
+        {
+            throw new MontantARedonnerNegatif();
+        }
+
+        int montantCents = (int)(arrondiA5sous(montantARedonner) * 100);
+        while(montantCents != 0)
+        {
+            for (ArgentObjet a: ArgentObjet.values())
+            {
+                if (montantCents >= a.valeurEnCents)
+                {
+                    int c = montantCents / a.valeurEnCents;
+                    if (nombreItemsPour(a) >= c)
+                    {
+                        montantCents -= (c*a.valeurEnCents);
+                        changeN.ajouterItem(a,c);
+                        retirerItems(a, c);
+                    }
+                }
+            }
+        }
+
+        return changeN;
+
+    }
 
     public double arrondiA5sous(double montant) {
 
@@ -51,7 +82,7 @@ public class ServiceArgentPrimeau implements ServiceArgent {
     }
 
     public double valeurTotale() {
-        int sum = 0;
+        double sum = 0;
         for (ArgentObjet a : map.keySet())
             sum += (a.valeur() * map.get(a));
 

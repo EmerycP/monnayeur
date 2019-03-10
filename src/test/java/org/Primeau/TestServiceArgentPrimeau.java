@@ -1,5 +1,6 @@
 package org.Primeau;
 
+import org.Primeau.exception.MontantARedonnerNegatif;
 import org.Primeau.exception.NombreChangeInvalide;
 import org.Primeau.exception.NombreChangeNegatif;
 import org.Primeau.impl.ChangePrimeau;
@@ -64,6 +65,8 @@ public class TestServiceArgentPrimeau {
     public void testAjoutSimpleService()
     {
         ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        for (ArgentObjet a: ArgentObjet.values())
+            c.retirerItems(a, 40);
         c.ajouterItem(ArgentObjet.billet100, 3);
         Assert.assertEquals(300, c.valeurTotale(),0);
         c.ajouterItem(ArgentObjet.billet10, 3);
@@ -73,16 +76,12 @@ public class TestServiceArgentPrimeau {
     public void testAjoutBeaucoupService()
     {
         ServiceArgentPrimeau c = new ServiceArgentPrimeau();
-        c.ajouterItem(ArgentObjet.billet100, 3);
-        Assert.assertEquals(300, c.valeurTotale(),0);
         c.ajouterItem(ArgentObjet.piece1, 1341234123);
     }
     @Test(expected = NombreChangeInvalide.class)
     public void testAjoutNegatifService()
     {
         ServiceArgentPrimeau c = new ServiceArgentPrimeau();
-        c.ajouterItem(ArgentObjet.billet100, 3);
-        Assert.assertEquals(300, c.valeurTotale(),0);
         c.ajouterItem(ArgentObjet.piece1, -1);
     }
     @Test
@@ -90,18 +89,19 @@ public class TestServiceArgentPrimeau {
     {
         ServiceArgentPrimeau c = new ServiceArgentPrimeau();
         c.ajouterItem(ArgentObjet.billet20, 2);
-        Assert.assertEquals(2, c.nombreItemsPour(ArgentObjet.billet20), 0);
+        Assert.assertEquals(42, c.nombreItemsPour(ArgentObjet.billet20), 0);
     }
     @Test
     public void testVideService()  {
         ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        for (ArgentObjet a: ArgentObjet.values())
+            c.retirerItems(a, 40);
         Assert.assertEquals(0, c.valeurTotale(),0);
         Assert.assertEquals(0, c.nombreTotalItems(), 0);
     }
     @Test(expected = IllegalArgumentException.class)
     public void testRetirerNombreNeg(){
         ServiceArgentPrimeau c = new ServiceArgentPrimeau();
-        c.ajouterItem(ArgentObjet.billet20, 5);
         c.retirerItems(ArgentObjet.billet20, -2);
     }
     @Test
@@ -109,14 +109,46 @@ public class TestServiceArgentPrimeau {
         ServiceArgentPrimeau c = new ServiceArgentPrimeau();
         c.ajouterItem(ArgentObjet.billet20, 5);
         c.retirerItems(ArgentObjet.billet20, 3);
-        Assert.assertEquals(2 ,c.nombreItemsPour(ArgentObjet.billet20), 0);
+        Assert.assertEquals(42 ,c.nombreItemsPour(ArgentObjet.billet20), 0);
     }
     @Test(expected = NombreChangeNegatif.class)
     public void testCapaciteMaxMarche2(){
         ServiceArgentPrimeau c = new ServiceArgentPrimeau();
         c.ajouterItem(ArgentObjet.billet20, 5);
-        c.retirerItems(ArgentObjet.billet20, 7);
-        Assert.assertEquals(2 ,c.nombreItemsPour(ArgentObjet.billet20), 0);
+        c.retirerItems(ArgentObjet.billet20, 46);
+        //Assert.assertEquals(2,c.nombreItemsPour(ArgentObjet.billet20), 0);
     }
-	
+    @Test
+    public void testCalculChangeSimple() {
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        ChangePrimeau ch = new ChangePrimeau();
+        ch.ajouterItem(ArgentObjet.billet50, 1);
+        Assert.assertEquals(20.0, c.calculerChange(30, ch).valeurTotale(), 0.01);
+    }
+    @Test(expected = MontantARedonnerNegatif.class)
+    public void testCalculChangeDonnePasAsser(){
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        ChangePrimeau ch = new ChangePrimeau();
+        ch.ajouterItem(ArgentObjet.billet20, 1);
+        c.calculerChange(30, ch).valeurTotale();
+        //Assert.assertEquals(20.0, c.calculerChange(30, ch).valeurTotale(), 0.01);
+    }
+    @Test
+    public void testCalculChangeSimple2() {
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        ChangePrimeau ch = new ChangePrimeau();
+        ch.ajouterItem(ArgentObjet.billet20, 2);
+        ch.ajouterItem(ArgentObjet.billet5, 2);
+        Assert.assertEquals(20.0, c.calculerChange(30, ch).valeurTotale(), 0.01);
+    }
+    @Test
+    public void testCalculChangeSimpleVirgule() {
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        ChangePrimeau ch = new ChangePrimeau();
+        ch.ajouterItem(ArgentObjet.billet20, 2);
+        ch.ajouterItem(ArgentObjet.billet5, 2);
+        ch.ajouterItem(ArgentObjet.piece25s, 3);
+        Assert.assertEquals(50.75, ch.valeurTotale(), 0.0);
+        Assert.assertEquals(20.25, c.calculerChange(30.50, ch).valeurTotale(), 0.01);
+    }
 }

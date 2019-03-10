@@ -33,7 +33,7 @@ public class ChangePrimeau implements Change {
     }
 
     public double valeurTotale() {
-        int sum = 0;
+        double sum = 0;
         for (ArgentObjet a : map.keySet())
             sum += (a.valeur() * map.get(a));
 

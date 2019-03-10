@@ -10,10 +10,8 @@ public class TestChangePrimeau {
     public void testAjoutSimple()
     {
         ChangePrimeau c = new ChangePrimeau();
-        c.ajouterItem(ArgentObjet.billet100, 3);
-        Assert.assertEquals(300, c.valeurTotale(),0);
-        c.ajouterItem(ArgentObjet.billet10, 3);
-        Assert.assertEquals(330, c.valeurTotale(),0);
+        c.ajouterItem(ArgentObjet.piece25s, 3);
+        Assert.assertEquals(0.75, c.valeurTotale(),0);
     }
     @Test(expected = IllegalArgumentException.class)
     public void testAjoutBeaucoup()
