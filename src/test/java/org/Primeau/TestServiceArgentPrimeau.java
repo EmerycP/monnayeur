@@ -1,12 +1,8 @@
 package org.Primeau;
 
-import org.Primeau.exception.MontantARedonnerNegatif;
-import org.Primeau.exception.NombreChangeInvalide;
-import org.Primeau.exception.NombreChangeNegatif;
+import org.Primeau.exception.*;
 import org.Primeau.impl.ChangePrimeau;
 import org.Primeau.impl.ServiceArgentPrimeau;
-import org.Primeau.interfaces.Change;
-import org.Primeau.interfaces.ServiceArgent;
 import org.Primeau.utils.ArgentObjet;
 import org.junit.Assert;
 import org.junit.Test;
@@ -66,7 +62,7 @@ public class TestServiceArgentPrimeau {
     {
         ServiceArgentPrimeau c = new ServiceArgentPrimeau();
         for (ArgentObjet a: ArgentObjet.values())
-            c.retirerItems(a, 40);
+            c.retirerItems(a, 20);
         c.ajouterItem(ArgentObjet.billet100, 3);
         Assert.assertEquals(300, c.valeurTotale(),0);
         c.ajouterItem(ArgentObjet.billet10, 3);
@@ -89,13 +85,13 @@ public class TestServiceArgentPrimeau {
     {
         ServiceArgentPrimeau c = new ServiceArgentPrimeau();
         c.ajouterItem(ArgentObjet.billet20, 2);
-        Assert.assertEquals(42, c.nombreItemsPour(ArgentObjet.billet20), 0);
+        Assert.assertEquals(22, c.nombreItemsPour(ArgentObjet.billet20), 0);
     }
     @Test
     public void testVideService()  {
         ServiceArgentPrimeau c = new ServiceArgentPrimeau();
         for (ArgentObjet a: ArgentObjet.values())
-            c.retirerItems(a, 40);
+            c.retirerItems(a, 20);
         Assert.assertEquals(0, c.valeurTotale(),0);
         Assert.assertEquals(0, c.nombreTotalItems(), 0);
     }
@@ -109,13 +105,13 @@ public class TestServiceArgentPrimeau {
         ServiceArgentPrimeau c = new ServiceArgentPrimeau();
         c.ajouterItem(ArgentObjet.billet20, 5);
         c.retirerItems(ArgentObjet.billet20, 3);
-        Assert.assertEquals(42 ,c.nombreItemsPour(ArgentObjet.billet20), 0);
+        Assert.assertEquals(22 ,c.nombreItemsPour(ArgentObjet.billet20), 0);
     }
     @Test(expected = NombreChangeNegatif.class)
     public void testCapaciteMaxMarche2(){
         ServiceArgentPrimeau c = new ServiceArgentPrimeau();
         c.ajouterItem(ArgentObjet.billet20, 5);
-        c.retirerItems(ArgentObjet.billet20, 46);
+        c.retirerItems(ArgentObjet.billet20, 26);
         //Assert.assertEquals(2,c.nombreItemsPour(ArgentObjet.billet20), 0);
     }
     @Test
@@ -150,5 +146,98 @@ public class TestServiceArgentPrimeau {
         ch.ajouterItem(ArgentObjet.piece25s, 3);
         Assert.assertEquals(50.75, ch.valeurTotale(), 0.0);
         Assert.assertEquals(20.25, c.calculerChange(30.50, ch).valeurTotale(), 0.01);
+    }
+    @Test(expected = ManqueDePlace.class)
+    public void testCalculManqueDePlace(){
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        ChangePrimeau ch = new ChangePrimeau();
+        ch.ajouterItem(ArgentObjet.piece1, 21);
+        c.calculerChange(20, ch);
+    }
+    @Test(expected = ManqueDePlace.class)
+    public void testCalculManqueDePlaceNimporte(){
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        ChangePrimeau ch = new ChangePrimeau();
+        ch.ajouterItem(ArgentObjet.piece1, 53);
+        c.calculerChange(2, ch);
+    }
+
+    @Test
+    public void testNom(){
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        Assert.assertEquals("Émeryc Primeau", c.nomEtudiant());
+    }
+
+    @Test(expected = ManqueDeFond.class)
+    public void testCalculManqueDeFond()
+    {
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        c.retirerItems(ArgentObjet.piece1, 20);
+        ChangePrimeau ch = new ChangePrimeau();
+        ch.ajouterItem(ArgentObjet.piece1, 17);
+        c.calculerChange(16, ch).valeurTotale();
+    }
+
+    @Test(expected = ManqueDeFond.class)
+    public void testCalculManqueDeFondAyantArgent()
+    {
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        ChangePrimeau ch = new ChangePrimeau();
+        ch.ajouterItem(ArgentObjet.piece1, 5645);
+        c.calculerChange(16, ch).valeurTotale();
+    }
+
+    @Test(expected = ManqueDeFond.class)
+    public void testCalculManqueDeFondPlein()
+    {
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        c.ajouterItem(ArgentObjet.piece1,20);
+        ChangePrimeau ch = new ChangePrimeau();
+        ch.ajouterItem(ArgentObjet.piece1, 5645);
+        c.calculerChange(16, ch).valeurTotale();
+    }
+
+    @Test(expected = ManqueDeFond.class)
+    public void testCalculManqueObjetPiece()
+    {
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        c.retirerItems(ArgentObjet.piece1, 20);
+        c.retirerItems(ArgentObjet.piece25s, 20);
+        c.retirerItems(ArgentObjet.piece2, 20);
+        c.retirerItems(ArgentObjet.piece5s, 20);
+        c.retirerItems(ArgentObjet.piece10s, 20);
+
+        ChangePrimeau ch = new ChangePrimeau();
+        ch.ajouterItem(ArgentObjet.billet100, 1);
+        Assert.assertEquals(37, c.calculerChange(63, ch).valeurTotale(), 0.01);
+
+    }
+
+    @Test(expected = ManqueDeFond.class)
+    public void testCalculManqueObjetBillet()
+    {
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        c.retirerItems(ArgentObjet.billet20, 20);
+        c.retirerItems(ArgentObjet.billet100, 20);
+        c.retirerItems(ArgentObjet.billet10, 20);
+        c.retirerItems(ArgentObjet.billet5, 20);
+        c.retirerItems(ArgentObjet.billet50, 20);
+
+        ChangePrimeau ch = new ChangePrimeau();
+        ch.ajouterItem(ArgentObjet.piece1, 205);
+        Assert.assertEquals(200, c.calculerChange(5, ch).valeurTotale(), 0.01);
+
+    }
+
+    @Test
+    public void testCasSoixante(){
+        ServiceArgentPrimeau c = new ServiceArgentPrimeau();
+        for (ArgentObjet a: ArgentObjet.values())
+            c.retirerItems(a, 20);
+        c.ajouterItem(ArgentObjet.billet20, 20);
+        c.ajouterItem(ArgentObjet.billet50, 20);
+        ChangePrimeau ch = new ChangePrimeau();
+        ch.ajouterItem(ArgentObjet.billet100, 1);
+        Assert.assertEquals(60, c.calculerChange(40, ch).valeurTotale(), 0.01);
     }
 }

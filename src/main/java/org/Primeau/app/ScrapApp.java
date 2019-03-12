@@ -1,9 +1,8 @@
 package org.Primeau.app;
 
 import org.Primeau.impl.ChangePrimeau;
-import org.Primeau.interfaces.Change;
 import org.Primeau.impl.ServiceArgentPrimeau;
-import org.Primeau.interfaces.ServiceArgent;
+import org.Primeau.interfaces.Change;
 import org.Primeau.utils.ArgentObjet;
 import org.Primeau.utils.StringUtils;
 
@@ -23,7 +22,7 @@ public class ScrapApp
 		/**
 		 * Changez ici pour tester vos propres classes
 		 */
-		ServiceArgent m = new ServiceArgentPrimeau();  // changez le monnayeur par le vôtre
+		ServiceArgentPrimeau m = new ServiceArgentPrimeau();  // changez le monnayeur par le vôtre
 		
 		while(true){
 			double amount = 0.0;

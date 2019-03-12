@@ -1,14 +1,10 @@
 package org.Primeau.impl;
 
-import org.Primeau.exception.MontantARedonnerNegatif;
-import org.Primeau.exception.NombreChangeInvalide;
-import org.Primeau.exception.NombreChangeNegatif;
+import org.Primeau.exception.*;
 import org.Primeau.interfaces.Change;
-import org.Primeau.impl.ChangePrimeau;
 import org.Primeau.interfaces.ServiceArgent;
 import org.Primeau.utils.ArgentObjet;
 
-import java.util.Collections;
 import java.util.HashMap;
 
 
@@ -18,7 +14,7 @@ public class ServiceArgentPrimeau implements ServiceArgent {
         {
             for (ArgentObjet argent : ArgentObjet.values())
             {
-                put(argent, capaciteMaxPour(argent));
+                put(argent, capaciteMaxPour(argent)/2);
             }
         }
     };
@@ -36,16 +32,23 @@ public class ServiceArgentPrimeau implements ServiceArgent {
         int montantCents = (int)(arrondiA5sous(montantARedonner) * 100);
         while(montantCents != 0)
         {
-            for (ArgentObjet a: ArgentObjet.values())
+            for (ArgentObjet argentActuel: ArgentObjet.values())
             {
-                if (montantCents >= a.valeurEnCents)
+                if (montantCents >= argentActuel.valeurEnCents)
                 {
-                    int c = montantCents / a.valeurEnCents;
-                    if (nombreItemsPour(a) >= c)
+                    int nombreObjet = montantCents / argentActuel.valeurEnCents;
+                    if (nombreItemsPour(argentActuel) >= nombreObjet)
                     {
-                        montantCents -= (c*a.valeurEnCents);
-                        changeN.ajouterItem(a,c);
-                        retirerItems(a, c);
+                        montantCents -= (nombreObjet * argentActuel.valeurEnCents);
+
+                        if(argentDonne.nombreItemsPour(argentActuel) + nombreItemsPour(argentActuel) > capaciteMaxPour(argentActuel))
+                            throw new ManqueDePlace();
+
+                        changeN.ajouterItem(argentActuel,nombreObjet);
+                        retirerItems(argentActuel, nombreObjet);
+                    }
+                    else {
+                        throw new ManqueDeFond();
                     }
                 }
             }

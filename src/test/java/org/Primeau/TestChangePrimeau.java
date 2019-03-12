@@ -42,4 +42,17 @@ public class TestChangePrimeau {
         Assert.assertEquals(0, c.valeurTotale(),0);
         Assert.assertEquals(0, c.nombreTotalItems(), 0);
     }
+    @Test
+    public void testValeur() {
+        ChangePrimeau c = new ChangePrimeau();
+        c.ajouterItem(ArgentObjet.billet5, 1);
+        Assert.assertEquals(5, c.valeurTotale(), 0);
+    }
+    @Test
+    public void testValeurNombreTotalParItem() {
+        ChangePrimeau c = new ChangePrimeau();
+        c.ajouterItem(ArgentObjet.billet5, 5);
+        Assert.assertEquals(5, c.nombreItemsPour(ArgentObjet.billet5), 0);
+
+    }
 }
